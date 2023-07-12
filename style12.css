@@ -1,0 +1,153 @@
+#lang  {
+    float: right;
+    box-shadow: 2px solid #222538;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #222538;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+.container {
+    width: 95%;
+    padding: 10px;
+    background: rgba(199, 226, 42, 0.7);
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+
+}
+.box > img {
+    width: 250px;
+    height: 300px;
+    background: orange;
+    margin: 0px 10px;
+    transition: 1s;
+}
+.box:hover {
+    transform: scale(1.3);
+    background:#faeadb ;
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2;
+
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgb(181, 197, 197);
+          
+}
+.marquee {
+    animation: marquee 20.5s infinite linear;
+}
+h1::last-letter {
+    color: blue;
+    }
+h1::first-letter {
+    color: blue;
+}
+/*h1:hover {
+    transform: scale(1.3);
+    background:#f87b06 ;
+    box-shadow: 2px 2px 2px rgb(4, 20, 241);
+    z-index: 2;
+}*/
+.btn {
+    border: 1px solid rgb(255, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.parag {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blue;
+}
+.parag:hover {
+    color: #f87b06;
+}
+main div li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+}
+main > div > ul {
+    margin: 0px;
+    padding: 0px;
+}
+main > div > ul > li{
+    background-color: rgb(63, 57, 78);
+}
+main > div > ul > li {
+    float: left;
+    position: relative;
+          
+}
+main > div > ul > li > a {
+    padding: 20px 30px;
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+main > div > ul ::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.submenu {
+    display: none;
+}
+main > div a {
+    display: inline-block;
+    text-decoration: none;
+}
+main > div > ul > li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+main div li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+.submenu li {
+    border-bottom: 1px solid #ccc;
+}
+.submenu li a {
+    padding: 15px 30px;
+    font-size: 15px;
+    color: #222538;
+    width: 270px;
+}
+.menu-histoire:hover {
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+.menu-alb:hover {
+    border-top: 5px solid #0070bb;
+    background-color: rgba(000, 112, 192, 0.15);
+}
+.menu-connexion:hover {
+    border-top: 5px solid #f1dc4f;
+    background-color: rgba(241, 211, 79, 0.15);
+}.menu-contact:hover {
+    border-top: 5px solid #bbb;
+    background-color: rgba(220, 220, 220, 0.15);
+}
+.menu-histoire .submenu{
+    background-color: #f87b06;
+}
+.menu-histoire .submenu :hover{
+    background-color: #7571af;
+    color: #fff;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-small;
+    background-color: #222538;
+    color: #fff;
+    text-align: center;
+}
+
+
+
